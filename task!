@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @keyframes backgroundAnimation {
+            0% { background-color: #aa7066; } /* Tomato Red */
+            25% { background-color: #6b5558; } /* Light Pink */
+            50% { background-color: #0b4457; } /* Light Blue */
+            75% { background-color: #0c550c; } /* Light Green */
+            100% { background-color: #5e1306; } /* Tomato Red */
+        }
+
+        body {
+            animation: backgroundAnimation 15s infinite;
+            background: no-repeat center center fixed;
+            background-size: cover;
+            transition: background-color 2s ease;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            animation: fadeIn 2s ease-out;
+            color: #2c3e50;
+        }
+
+        p {
+            animation: slideIn 3s ease-out;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 10px 20px;
+            background-color: #333;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #16a085;
+        }
+
+        section {
+            margin: 50px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="font-size: 60px; color: aliceblue;">My Personal Portfolio</h1>
+    </center>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm a passionate web developer with a strong interest in creating dynamic and responsive websites.
+            I specialize in front-end development, focusing on user experience and interface design. My goal is
+            to craft clean, efficient, and beautiful code that elevates the online presence of my clients.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>
+            I have worked on various web development projects, from small websites to complex web applications.
+            Here are a few of the highlights:
+            <ul>
+                <li>Portfolio Website (Responsive Design)</li>
+                <li>Blog Platform (Dynamic Content)</li>
+                <li>E-commerce Site (Product Management)</li>
+            </ul>
+        </p>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <p>
+            On my blog, I share insights about web development, programming languages, design trends, and personal
+            experiences in the tech world. Stay tuned for tutorials, tips, and best practices that can help you grow
+            as a developer.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            Feel free to reach out if you have any questions or would like to collaborate on a project. You can
+            contact me via email at <a href="mailto:me@example.com">me@example.com</a>, or connect with me on LinkedIn.
+        </p>
+    </section>
+</body>
+</html>
